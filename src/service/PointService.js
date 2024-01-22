@@ -72,7 +72,7 @@ export const getTags = async () => {
 
 
 export const loginGetToken = async (username, password) => {
-    return fetch(`${HOST}/auth/login`, {
+    return fetch(`${HOST}/api/auth/login`, {
 
         method: "POST",
         body: JSON.stringify({ "username": username, "password": password }),
