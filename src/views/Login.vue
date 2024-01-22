@@ -8,7 +8,6 @@ const password = ref('');
 
 
 function login() {
-    console.log(username.value, password.value)
     loginGetToken(username.value, password.value).then((data) => {
         window.localStorage.setItem("token", data)
         window.location = "/"
